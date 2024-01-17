@@ -1,0 +1,254 @@
+@font-face {
+    font-family: foziya;
+    src: url(./Concert_One/ConcertOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: sidefont;
+    src: url(./Nebula/Nebula-Hollow.otf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    padding: 70px 100px;
+    height: 100%;
+    width: 100%;
+    /* background-color:hsl(346deg 17% 70%); */
+    background-color: hsl(0, 0%, 0%);
+
+}
+
+#page1 {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: relative;
+    background-color: hsla(0, 0%, 37%, 0.431);
+    border-radius: 10px;
+}
+
+.part1 {
+    height: 100%;
+    width: 25%;
+    position: relative;
+}
+
+.part1 h2 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 11px;
+    position: absolute;
+    top: 6%;
+    left: 77%;
+    z-index: 1;
+    font-family: poppins;
+
+}
+/* Apply these styles to images inside elements with class "part1" */
+.part1 img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 3%;
+    left: 40%;
+    animation: rotate 4s linear infinite; /* Apply the "rotate" animation */
+}
+
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg); 
+    }
+    100% {
+        transform: rotate(360deg); 
+    }
+}
+
+
+.content {
+    position: relative;
+    left: 40%;
+    top: 44%;
+    height: 33%;
+    width: 140%;
+
+}
+
+.content h1 {
+    color: rgb(255, 255, 255);
+    /* Red text color */
+    letter-spacing: 10px;
+    line-height: 44px;
+    margin-top: 5px;
+    font-size: 50px;
+    font-weight: 999;
+    font-family: sans-serif;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    /* Set a higher z-index for the text */
+}
+
+.content h1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    /* Semi-transparent white background */
+
+}
+
+.content h1:nth-child(1)::before {
+    animation: slideBackground 4s linear infinite;
+    animation-delay: 1s;
+}
+
+.content h1:nth-child(2)::before {
+    animation: slideBackground 4s linear infinite;
+    animation-delay: 1.5s;
+}
+
+.content h1:nth-child(3)::before {
+    animation: slideBackground 4s linear infinite;
+    animation-delay: 2s;
+}
+
+.content h1:nth-child(4)::before {
+    animation: slideBackground 4s linear infinite;
+    animation-delay: 2.5s;
+}
+
+
+@keyframes slideBackground {
+
+    0%,
+    100% {
+        left: -100%;
+    }
+
+    50% {
+        left: 100%;
+    }
+}
+
+
+
+.part2 {
+    height: 100%;
+    width: 60%;
+}
+
+.part2 img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    object-fit: cover;
+   
+  
+}
+
+.part3 {
+    height: 100%;
+    width: 15%;
+    position: relative;
+}
+
+.part3 .small-image {
+    position: absolute;
+    height: 250px;
+    width: 210px;
+    top: 50%;
+    left: -20%;
+    transform: translate(-50%, -50%);
+}
+
+.part3 .small-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+    border-radius: 5px;
+}
+
+.part3 h1 {
+    position: absolute;
+    top: 46%;
+    left: -210px;
+    font-size: 45px;
+    letter-spacing: 0px;
+    z-index: 1;
+    color: white;
+    transform: rotate(90deg);
+    font-family: sidefont;
+}
+
+.part2 {
+    height: 100%;
+    width: 60%;
+
+}
+
+.part2 img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+
+
+
+}
+
+.part3 {
+    height: 100%;
+    width: 15%;
+    position: relative;
+
+
+}
+
+.part3 .small-image {
+    position: absolute;
+    height: 250px;
+    width: 210px;
+    top: 50%;
+    left: -20%;
+    transform: translate(-50%, -50%);
+}
+
+.part3 .small-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+
+}
+
+
+.part3 h1 {
+    position: absolute;
+    top: 46%;
+    left: -230px;
+    font-size: 50px;
+    letter-spacing: 0px;
+    z-index: 1;
+    color: white;
+    transform: rotate(90deg);
+    font-family: sidefont;
+}
